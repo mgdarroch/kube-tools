@@ -13,8 +13,9 @@ func init() {
 
 var aliasesCmd = &cobra.Command{
 	Use:   "aliases",
-	Short: "generates aliases for kubectl",
-	Long:  "generates shorthand aliases for kubectl, e.g. 'kubectl get pods' becomes 'kgpo'.  Heavily inspired by https://github.com/ahmetb/kubectl-aliases",
+	Short: "Generates aliases for kubectl",
+	Long: "Generates shorthand aliases for kubectl, e.g. 'kubectl get pods' becomes 'kgpo'." +
+		"\nHeavily inspired by the https://github.com/ahmetb/kubectl-aliases project, just converted to Golang",
 	Run: func(cmd *cobra.Command, args []string) {
 		main()
 	},
